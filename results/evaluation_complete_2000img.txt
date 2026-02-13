@@ -1,0 +1,214 @@
+
+================================================================================
+RAPPORT D'ÉVALUATION QUANTITATIVE COMPLET
+Dataset: ADE20K Validation Set
+Modèle: Vision Transformer Small 
+================================================================================
+
+MÉTRIQUES GLOBALES:
+  • Mean IoU (mIoU):        28.56%
+  • Pixel Accuracy:         77.16%
+  • Images évaluées:        2000/2000
+  • Classes présentes:      150/150
+
+VARIANCE INTER-IMAGES:
+  • Moyenne mIoU/image:     43.74%
+  • Écart-type:             17.07%
+  • Variance:               0.0292
+  • Min/Max:                0.00% / 98.21%
+
+ANALYSE CLASSES RARES vs COMMUNES:
+  • Classes rares (<p25):   38 classes → mIoU = 18.81%
+  • Classes communes (>p75): 38 classes → mIoU = 44.45%
+  • Écart performance:      25.64 points
+
+================================================================================
+TOP 10 MEILLEURES CLASSES:
+================================================================================
+   1. tent                 → 91.67% (apparitions: 3)
+   2. sky                  → 83.35% (apparitions: 800)
+   3. swimming             → 78.22% (apparitions: 3)
+   4. ceiling              → 73.28% (apparitions: 648)
+   5. skyscraper           → 70.15% (apparitions: 23)
+   6. road                 → 69.40% (apparitions: 406)
+   7. bed                  → 67.92% (apparitions: 189)
+   8. floor                → 67.85% (apparitions: 923)
+   9. pool                 → 64.06% (apparitions: 18)
+  10. building             → 63.78% (apparitions: 616)
+
+================================================================================
+TOP 10 PIRES CLASSES:
+================================================================================
+   1. barrel               →  0.00% (apparitions: 4)
+   2. tray                 →  0.00% (apparitions: 57)
+   3. shower               →  0.00% (apparitions: 14)
+   4. step                 →  0.00% (apparitions: 31)
+   5. glass                →  0.17% (apparitions: 57)
+   6. bannister            →  0.49% (apparitions: 51)
+   7. crt                  →  0.60% (apparitions: 18)
+   8. streetlight          →  1.06% (apparitions: 240)
+   9. bag                  →  1.29% (apparitions: 72)
+  10. bottle               →  2.61% (apparitions: 114)
+
+================================================================================
+mIoU PAR CLASSE (toutes les 150 classes):
+================================================================================
+    0. wall                 → 58.93% (1167 imgs)
+    1. building             → 63.78% (616 imgs)
+    2. sky                  → 83.35% (800 imgs)
+    3. floor                → 67.85% (923 imgs)
+    4. tree                 → 56.03% (645 imgs)
+    5. ceiling              → 73.28% (648 imgs)
+    6. road                 → 69.40% (406 imgs)
+    7. bed                  → 67.92% (189 imgs)
+    8. windowpane           → 47.59% (461 imgs)
+    9. grass                → 52.61% (227 imgs)
+   10. cabinet              → 33.79% (290 imgs)
+   11. sidewalk             → 49.87% (311 imgs)
+   12. person               → 36.93% (532 imgs)
+   13. earth                → 25.45% (190 imgs)
+   14. door                 → 26.99% (321 imgs)
+   15. table                → 31.58% (414 imgs)
+   16. mountain             → 50.35% (161 imgs)
+   17. plant                → 28.89% (445 imgs)
+   18. curtain              → 53.74% (218 imgs)
+   19. chair                → 29.93% (320 imgs)
+   20. car                  → 49.51% (309 imgs)
+   21. water                → 35.02% (75 imgs)
+   22. painting             → 49.27% (316 imgs)
+   23. sofa                 → 43.82% (106 imgs)
+   24. shelf                → 16.88% (134 imgs)
+   25. house                → 25.57% (69 imgs)
+   26. sea                  → 60.37% (57 imgs)
+   27. mirror               → 42.77% (123 imgs)
+   28. rug                  → 48.12% (123 imgs)
+   29. field                → 40.77% (45 imgs)
+   30. armchair             → 28.37% (98 imgs)
+   31. seat                 → 35.52% (56 imgs)
+   32. fence                → 16.11% (138 imgs)
+   33. desk                 → 27.61% (61 imgs)
+   34. rock                 → 27.30% (73 imgs)
+   35. wardrobe             → 40.02% (43 imgs)
+   36. lamp                 → 27.92% (303 imgs)
+   37. bathtub              → 57.61% (37 imgs)
+   38. railing              → 11.22% (100 imgs)
+   39. cushion              → 31.91% (153 imgs)
+   40. base                 →  9.08% (37 imgs)
+   41. box                  →  4.37% (163 imgs)
+   42. column               → 19.13% (78 imgs)
+   43. signboard            →  9.12% (302 imgs)
+   44. chest                → 31.19% (46 imgs)
+   45. counter              → 18.55% (36 imgs)
+   46. sand                 → 40.05% (30 imgs)
+   47. sink                 → 33.20% (122 imgs)
+   48. skyscraper           → 70.15% (23 imgs)
+   49. fireplace            → 54.42% (38 imgs)
+   50. refrigerator         → 52.14% (43 imgs)
+   51. grandstand           → 26.46% (12 imgs)
+   52. path                 → 22.49% (64 imgs)
+   53. stairs               → 10.12% (102 imgs)
+   54. runway               → 47.60% (14 imgs)
+   55. case                 → 37.18% (11 imgs)
+   56. pool                 → 64.06% (18 imgs)
+   57. pillow               → 31.15% (109 imgs)
+   58. screen               → 44.26% (18 imgs)
+   59. stairway             → 13.31% (52 imgs)
+   60. river                → 27.62% (26 imgs)
+   61. bridge               → 28.12% (29 imgs)
+   62. bookcase             → 30.27% (22 imgs)
+   63. blind                → 18.84% (60 imgs)
+   64. coffee               → 32.29% (75 imgs)
+   65. toilet               → 57.97% (49 imgs)
+   66. flower               → 19.79% (138 imgs)
+   67. book                 →  9.01% (113 imgs)
+   68. hill                 →  8.65% (27 imgs)
+   69. bench                →  8.71% (66 imgs)
+   70. countertop           → 39.80% (31 imgs)
+   71. stove                → 37.43% (56 imgs)
+   72. palm                 → 28.65% (36 imgs)
+   73. kitchen              → 46.86% (9 imgs)
+   74. computer             → 27.85% (29 imgs)
+   75. swivel               → 24.73% (33 imgs)
+   76. boat                 → 13.01% (27 imgs)
+   77. bar                  → 19.29% (20 imgs)
+   78. arcade               → 37.96% (6 imgs)
+   79. hovel                → 30.71% (8 imgs)
+   80. bus                  → 13.96% (26 imgs)
+   81. towel                → 25.52% (49 imgs)
+   82. light                → 16.09% (271 imgs)
+   83. truck                →  8.55% (39 imgs)
+   84. tower                → 14.53% (15 imgs)
+   85. chandelier           → 42.63% (56 imgs)
+   86. awning               →  9.41% (62 imgs)
+   87. streetlight          →  1.06% (240 imgs)
+   88. booth                → 48.21% (5 imgs)
+   89. television           → 45.33% (53 imgs)
+   90. airplane             → 35.42% (14 imgs)
+   91. dirt                 → 18.18% (5 imgs)
+   92. apparel              →  9.79% (17 imgs)
+   93. pole                 →  4.06% (103 imgs)
+   94. land                 → 10.34% (12 imgs)
+   95. bannister            →  0.49% (51 imgs)
+   96. escalator            → 24.32% (7 imgs)
+   97. ottoman              → 18.72% (31 imgs)
+   98. bottle               →  2.61% (114 imgs)
+   99. buffet               → 28.82% (13 imgs)
+  100. poster               →  9.28% (35 imgs)
+  101. stage                → 23.08% (9 imgs)
+  102. van                  →  5.27% (56 imgs)
+  103. ship                 → 36.40% (4 imgs)
+  104. fountain             → 30.12% (5 imgs)
+  105. conveyer             → 58.74% (4 imgs)
+  106. canopy               → 15.78% (9 imgs)
+  107. washer               → 49.79% (9 imgs)
+  108. plaything            →  8.78% (38 imgs)
+  109. swimming             → 78.22% (3 imgs)
+  110. stool                →  4.68% (49 imgs)
+  111. barrel               →  0.00% (4 imgs)
+  112. basket               →  8.89% (75 imgs)
+  113. waterfall            → 50.14% (9 imgs)
+  114. tent                 → 91.67% (3 imgs)
+  115. bag                  →  1.29% (72 imgs)
+  116. minibike             → 24.60% (30 imgs)
+  117. cradle               → 60.58% (7 imgs)
+  118. oven                 → 13.53% (18 imgs)
+  119. ball                 →  4.61% (25 imgs)
+  120. food                 → 15.15% (24 imgs)
+  121. step                 →  0.00% (31 imgs)
+  122. tank                 → 26.43% (12 imgs)
+  123. trade                →  4.06% (84 imgs)
+  124. microwave            → 42.00% (43 imgs)
+  125. pot                  →  7.86% (141 imgs)
+  126. animal               → 26.02% (23 imgs)
+  127. bicycle              → 13.06% (36 imgs)
+  128. lake                 → 19.47% (5 imgs)
+  129. dishwasher           → 25.44% (22 imgs)
+  130. screen               → 43.55% (13 imgs)
+  131. blanket              →  3.95% (30 imgs)
+  132. sculpture            → 11.38% (21 imgs)
+  133. hood                 → 32.22% (27 imgs)
+  134. sconce               →  9.88% (108 imgs)
+  135. vase                 →  6.21% (122 imgs)
+  136. traffic              →  4.41% (65 imgs)
+  137. tray                 →  0.00% (57 imgs)
+  138. ashcan               →  7.78% (100 imgs)
+  139. fan                  → 24.80% (44 imgs)
+  140. pier                 → 22.16% (8 imgs)
+  141. crt                  →  0.60% (18 imgs)
+  142. plate                →  6.16% (55 imgs)
+  143. monitor              →  7.07% (22 imgs)
+  144. bulletin             → 18.59% (19 imgs)
+  145. shower               →  0.00% (14 imgs)
+  146. radiator             → 32.57% (28 imgs)
+  147. glass                →  0.17% (57 imgs)
+  148. clock                →  4.08% (95 imgs)
+  149. flag                 →  6.26% (56 imgs)
+
+================================================================================
+CONCLUSIONS:
+================================================================================
+
+1. Performance globale: 28.56% mIoU sur 2000 images
+2. Stabilité: écart-type de 17.07% entre images
+3. Classes rares pénalisées: écart de 25.64 points
+4. Classes présentes: 150/150 (100.0%)
