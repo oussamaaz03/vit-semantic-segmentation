@@ -42,6 +42,8 @@
 
 This project implements a **Vision Transformer (ViT)** based semantic segmentation model trained on the **ADE20K dataset** (150 classes). The model achieves **43.08% Mean IoU** and **80.79% Pixel Accuracy** through a carefully designed training pipeline incorporating multiple state-of-the-art techniques.
 
+Built upon the Segmenter architecture (Strudel et al., ICCV 2021), extended with custom hybrid loss optimization, EMA, and comprehensive per-class evaluation.
+
 ### Dataset: ADE20K
 
 - **Training:** 20,210 images
@@ -216,7 +218,7 @@ Our improved training pipeline integrates multiple complementary techniques to b
 ### Step 1: Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/vit-semantic-segmentation.git
+git clone https://github.com/oussamaaz03/vit-semantic-segmentation.git
 cd vit-semantic-segmentation
 ```
 
